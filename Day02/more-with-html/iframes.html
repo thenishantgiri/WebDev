@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>iFrames</h1>
+    <ul>
+        <li><a target="frame1" href="./links.html">Links</a></li>
+        <li><a target="frame2" href="./innerlinks.html">Inner Links</a></li>
+    </ul>
+    <iframe name="frame1" width="400" height="400" src="../college-form/media/hogwartscrest.jpg" frameborder="1">
+    </iframe>
+
+    <h3>Emabedded Webpage</h3>
+    <!-- to achieve recursion, I have embeddeb the iframe.html page inside the iframe -->
+    <iframe name="frame2" width="400" height="400" src="./iframes.html" frameborder="1"></iframe>
+</body>
+
+</html>
