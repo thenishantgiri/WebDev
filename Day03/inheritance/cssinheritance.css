@@ -1,0 +1,24 @@
+/*      id>>>class>>div(element)>*               */
+* {
+    background-color: lightcyan;
+}
+
+div {
+    background-color: lightseagreen;
+}
+
+.cl1 {
+    background-color: lightcoral;
+}
+
+#id1 {
+    background-color: lightgreen;
+}
+
+#id1 {
+    background-color: lightsteelblue;
+}
+
+.cl1{
+    background-color: lightpink;
+}
