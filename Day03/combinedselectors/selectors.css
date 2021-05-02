@@ -1,0 +1,20 @@
+li {
+    font-weight: bold;
+}
+
+ul>li {
+    color: hotpink;
+}
+
+ol>li {
+    color: indianred;
+}
+
+/* Descendent */
+ul li li {
+    font-style: italic;
+}
+
+ol~ul {
+    background-color: greenyellow;
+}
