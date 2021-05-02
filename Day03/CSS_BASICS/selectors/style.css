@@ -1,0 +1,39 @@
+/* *: this is a wildcard selector i.e. for every element */
+*{
+    font-style: italic;
+}
+div{
+    color: darkgoldenrod;
+}
+
+p{
+    color: cadetblue;
+}
+
+/* .big: big is class, to select a class we use "." as prefix, followed by the class name ; class selectors are used for many to many mapping */
+.big{
+    font-size: 25pt;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* #one: one is an id, to select an id we use "#" as prefix, followed by the id name ; id selectors are used for one to one mapping */
+#one{
+    background-color: darksalmon;
+}
+
+#two{
+    padding-left: 20pt;
+}
+
+/* Attribute Selector: input [disabled] : input -> element ; disabled -> attribute */
+input [disabled]{
+   color: darksalmon;
+}
+
+input[type="text"]{
+    height: 100px;
+    color: darksalmon;
+}
