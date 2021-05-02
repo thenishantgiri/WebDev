@@ -1,0 +1,26 @@
+/* Pseudo Classes: A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it. */
+.box {
+    height: 80px;
+    width: 80px;
+    background-color: darkslategray;
+    padding: 10px;
+    color: dodgerblue;
+}
+
+.box:hover {
+    background-color: dodgerblue;
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+/* Active State is when you go the element and click it */
+.box:active {
+    height: 100px;
+    width: 100px;
+    font-size: 25pt;
+}
+
+input:focus {
+    font-size: 30pt;
+    width: 200px;
+}
