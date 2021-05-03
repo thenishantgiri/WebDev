@@ -1,0 +1,40 @@
+.container {
+    height: 400px;
+    width: 400px;
+    margin: 30px;
+    background-color: lightcoral;
+}
+
+.item {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    background-color: lightcyan;
+    border: solid gray 1px;
+    display: inline-block;
+
+    animation: bounce 2s infinite;
+}
+
+.one {
+    animation-timing-function: ease-in;
+}
+
+.two {
+    animation-timing-function: ease-out;
+}
+
+.three {
+    animation-timing-function: linear;
+}
+
+/* to add animation use "@keyframes" then declare the type of animation you want, eg bounce */
+@keyframes bounce {
+    0% {}
+
+    50% {
+        transform: translateY(300px);
+    }
+
+    100% {}
+}
