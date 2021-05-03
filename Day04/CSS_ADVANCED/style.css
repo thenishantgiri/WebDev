@@ -1,0 +1,40 @@
+div {
+    height: 100px;
+    width: 100px;
+    color: beige;
+    background-color: indigo;
+    margin: 30px;
+    padding: 20px;
+}
+
+/* to scale up or down */
+.one {
+    transform: scale(1.2, 1.2);
+    /* height: 200px;
+    width: 200px; */
+}
+
+/* to rotate */
+.two {
+    transform: rotateZ(10deg);
+}
+
+/* to move */
+.three {
+    transform: translateX(80px) translateY(10px);
+}
+
+/* it will first rotate, then move along its new X axis in this case  */
+.four {
+    transform: rotate(45deg) translateX(80px);
+}
+
+/* skews, not on the axis provided */
+.five {
+    transform: skewX(-40deg) skewY(40deg) skewX(40deg) skewY(-40deg);
+}
+
+/* attempt to make diamond shape */
+.six {
+    transform: skew(10deg, 10deg) rotate(35deg);
+}
