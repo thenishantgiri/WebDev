@@ -1,0 +1,28 @@
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+
+    background-color: indianred;
+}
+
+@media(max-width: 1200px) {
+    .box {
+        background-color: lightslategray;
+    }
+}
+
+@media (max-width: 900px) {
+    .box {
+        background-color: lightblue;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        background-color: lightgreen;
+    }
+}
+
+/* In mobile first approach: use min-width properties and least value first */
+/* In desktop first approach: use max-width properties and greatest value first */
