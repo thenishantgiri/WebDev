@@ -23,6 +23,7 @@ let arr2 = [1, "hello", false, [2, 3]];
 // }
 
 //Arrays - Part 2 - Add/Remove Items
+
 let fruits = ["apple", "mango"];
 
 //push and pop
@@ -36,5 +37,34 @@ let fruits = ["apple", "mango"];
 // fruits.shift(); //removes first element
 // console.log(fruits);
 
-fruits.unshift("kiwi", "grapes"); //adds element at first index
-console.log(fruits);
+// fruits.unshift("kiwi", "grapes"); //adds element at first index
+// console.log(fruits);
+
+//Arrays - Part 3 - Data Changing
+
+// let notes = ["do", "re", "mi", "fa", "so", "la", "ti", "do"];
+
+// console.log(notes);
+
+// console.log(notes.slice(4));
+// console.log(notes.slice(4, 6));
+
+//splice - destructive in nature
+
+// let omit = notes.splice(4);
+// console.log(omit);
+// console.log(notes);
+
+// let omit = notes.splice(4, 2);
+// console.log(omit);
+// console.log(notes);
+
+//splice - replacing data
+// notes.splice(0, 3, "sa", "re", "ga");
+// console.log(notes);
+
+//concat - non destructive in nature
+
+let notes = ["do", "re", "mi"];
+console.log(notes.concat(["sa", "re", "ga"]));
+console.log(notes);
