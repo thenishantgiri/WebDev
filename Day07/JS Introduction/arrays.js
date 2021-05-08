@@ -18,6 +18,23 @@ let arr2 = [1, "hello", false, [2, 3]];
 // }
 
 //for-in loop (in is for index)
-for (let index in arr2) {
-  console.log(index);
-}
+// for (let index in arr2) {
+//   console.log(index);
+// }
+
+//Arrays - Part 2 - Add/Remove Items
+let fruits = ["apple", "mango"];
+
+//push and pop
+// fruits.push("melon"); //adds element at last
+// console.log(fruits);
+
+// fruits.pop(); //removes last element
+// console.log(fruits);
+
+//shift and unshift
+// fruits.shift(); //removes first element
+// console.log(fruits);
+
+fruits.unshift("kiwi", "grapes"); //adds element at first index
+console.log(fruits);
