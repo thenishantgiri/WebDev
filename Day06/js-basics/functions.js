@@ -26,3 +26,11 @@ function area(height, width) {
 
 console.log("area 3,4", area(3, 4));
 console.log("area 4", area(4));
+
+function hello() {
+  let arguments = "Mr.";
+  console.log(arguments[0] + arguments[1] + arguments[2] + " Nishant Giri");
+}
+
+hello(1, 2);
+hello("Arnav", "Gupta");
