@@ -1,0 +1,78 @@
+.container {
+    height: auto;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 1;
+
+    /* background-color: lightcyan; */
+}
+
+.item {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+    background-color: lightpink;
+    color: lightyellow;
+    font-size: 20pt;
+    z-index: 3;
+
+    border: dashed darkgray;
+}
+
+/* .container.one > .item.four {
+    background-color: lightgreen;
+} */
+
+
+/* 
+    relative: from original position
+    absolutr: from parent
+*/
+
+.one > .three {
+    position: relative;
+    z-index: 5;
+}
+
+.one>.six {
+    position: relative;
+    z-index: 5;
+}
+
+.one > .four {
+    position: absolute;
+    /* right: 10px; */
+    left: 100px;
+    /* right: 20px; */
+
+    top: 100px;
+    /* bottom: 20px; */
+}
+
+.one > .five {
+    position: fixed;
+    left: 100px;
+    top: 100px;
+}
+
+.container > .one {
+    position: sticky;
+    top: 30px;
+}
+
+.container > .two {
+    position: sticky;
+    z-index: 2;
+    top: 30px;
+    bottom: 30px;
+}
+
+.item:nth-child(5n) {
+    background-color: lightsteelblue;
+}
+
+.container:nth-child(2n) {
+    background-color: lightskyblue;
+}
