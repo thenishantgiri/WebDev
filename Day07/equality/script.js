@@ -12,4 +12,4 @@ console.log("" == false); //true, both typecast to 0
 // this doesn't hold good for abstract equaity
 // a = b, b = c ... implies that ...a = c
 
-console.log([1, 2] == [1, 2]);
+console.log([1, 2] == [1, 2]); //false, as it creates two references
