@@ -63,5 +63,5 @@ for (let i = 0; i < 10; i++) {
 //fixing For Loop (if not using ES6 : ecmascript 6 and want to use var instead of let )
 //Using signature of "setTimeout()", which has a "callback() function", a delay, an array of arguments which are passed to callback() function
 for (var i = 0; i < 10; i++) {
-  setTimeout(console.log, 100, i); //copy of i is passed, because it's "pass by value"
+  setTimeout(console.log, 100, i); //copy of "i" is passed, because it's "pass by value"
 }
