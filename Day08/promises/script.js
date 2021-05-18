@@ -16,6 +16,7 @@ function fakeDownloadPromise(correct) {
     //return a Promise object
     setTimeout(function () {
       let downloadedData = "some data from the Internet";
+      console.info("Downloading has completed.");
       if (correct) {
         resolve(downloadedData);
       } else {
@@ -25,15 +26,27 @@ function fakeDownloadPromise(correct) {
   });
 }
 
-fakeDownloadPromise(false)
-  .then(function (data) {
-    //this is a promise object, on which we can use "then" call, to write our resolve function
-    //When we call reject, catch function gets executed
+let downloaded = fakeDownloadPromise(true);
+downloaded.catch(function (err) {
+  console.log(err);
+});
 
-    console.log("The data that we downloaded is -->");
+setTimeout(function () {
+  downloaded.then(function (data) {
+    console.info("The data that was downloaded is this --> ");
     console.log(data);
-  })
-  .catch(function (err) {
-    //When we call reject, catch function gets executed
-    console.log(err);
-  });
+  }, 3000);
+});
+
+// fakeDownloadPromise(false)
+//   .then(function (data) {
+//     //this is a promise object, on which we can use "then" call, to write our resolve function
+//     //When we call reject, catch function gets executed
+
+//     console.log("The data that we downloaded is -->");
+//     console.log(data);
+//   })
+//   .catch(function (err) {
+//     //When we call reject, catch function gets executed
+//     console.log(err);
+//   });
