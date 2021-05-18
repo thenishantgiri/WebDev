@@ -52,3 +52,10 @@ for (var i = 0; i < 10; i++) {
     }, 100);
   })(i);
 }
+
+//fixing For Loop using "let" ; let creates internal closure inside every iteration
+for (let i = 0; i < 10; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, 100);
+}
