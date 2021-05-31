@@ -82,3 +82,13 @@ Array.prototype.join = function () {
   console.log("join called on", this);
   return this.joinOriginal(...arguments);
 };
+
+/**
+ * Array.prototype
+ * {
+ * ....
+ * joinOriginal: function () {joinOriginal <-- join},
+ * join: function () {we wrote our function},
+ * ....
+ * }
+ */
