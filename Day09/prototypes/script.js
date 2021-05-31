@@ -54,3 +54,31 @@ console.log(typeof x == typeof bool); //false
 // we achieve OOPs behaviour using prototypes, unlike in Java, we achieve this using "classes"
 
 // __proto__ is a hidden pointer inside every object, which points to the blueprint/model from which it was created
+
+console.log(str.charAt(4));
+console.log(typeof str.charAt); //function
+console.log(typeof str.charAt(4)); //string
+let str2 = "dragon";
+console.log(str.charAt == str2.charAt); //true
+
+str.charAt = function () {
+  //this won't override charAt function
+  return "X";
+};
+
+String.prototype.charAt = function () {
+  //this will override charAt function
+  return "X";
+};
+
+console.log(str.charAt(1));
+
+// String.prototype contains all the default string functions
+// like charAt, indexOf, substring, slice etc
+
+Array.prototype.joinOriginal = Array.prototype.join;
+
+Array.prototype.join = function () {
+  console.log("join called on", this);
+  return this.joinOriginal(...arguments);
+};
