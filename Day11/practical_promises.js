@@ -3,7 +3,7 @@ function download(url) {
     if (!url.startsWith("http")) {
       reject(new Error("URL doesn't start with http"));
     } else {
-      console.log("Starting download : " + url);
+      console.log("Start download : " + url);
       setTimeout(function () {
         //fake 3 second download task
         let fileName = url.split("/").pop();
