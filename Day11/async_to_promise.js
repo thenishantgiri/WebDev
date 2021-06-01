@@ -1,5 +1,5 @@
 function someAsyncTask(callback) {
-  console.log("Hi");
+  console.log("**Hi**");
 
   setTimeout(function () {
     console.log("Alpha");
@@ -7,7 +7,7 @@ function someAsyncTask(callback) {
     console.log("Beta");
   }, 5000);
 
-  console.log("Bye");
+  console.log("**Bye**");
 }
 
 /**
