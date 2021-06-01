@@ -51,6 +51,8 @@ function upload(resizeFileName) {
   });
 }
 
+/*
+
 //version 2.0
 download("http://google.com/logo.png")
   .then(resize)
@@ -60,5 +62,33 @@ download("http://google.com/logo.png")
   })
   .catch(function (error) {
     //to catch the error thrown by Promise
+    console.error(error);
+  });
+
+*/
+
+//version 3.0
+Promise.all([
+  // if any one of the promises 'reject' , call goes to 'catch' instead of 'then'
+  download("http://google.com/logo.png"),
+  download("http://google.com/banner.png"),
+  download("http://google.com/promo.png"),
+])
+  .then(function (downloadedValues) {
+    // console.log(values);
+
+    // return values.map(function (item) {
+    //   return resize(item);
+    // });
+
+    return Promise.all(downloadedValues.map(resize));
+  })
+  .then(function (resizedValues) {
+    return Promise.all(resizedValues.map(upload));
+  })
+  .then(function (uploadValues) {
+    console.log(uploadValues);
+  })
+  .catch(function (error) {
     console.error(error);
   });
