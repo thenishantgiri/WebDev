@@ -15,12 +15,8 @@ btnWait.onclick = function () {
   divStatus.textContent = "WAITING";
   console.log("waiting");
 
-  //wait for 5 secs
-  let start = Date.now();
-  while (Date.now() < start + 5000) {
-    /* do nothing */
-  }
-
-  divStatus.textContent = "DONE";
-  console.log("done");
+  setTimeout(() => {
+    divStatus.textContent = "DONE";
+    console.log("done");
+  }, 5000);
 };
