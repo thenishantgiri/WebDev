@@ -1,0 +1,27 @@
+let btnWait = document.getElementById("btnWait");
+let btnCount = document.getElementById("btnCount");
+let divStatus = document.getElementById("divStatus");
+let divVal = document.getElementById("divVal");
+
+let count = 0;
+
+btnCount.onclick = function () {
+  count++;
+  console.log("count", count);
+  divVal.textContent = count;
+};
+
+btnWait.onclick = function () {
+  //batching : that's why we aren't able see "WAITING" written on the webpage
+  divStatus.textContent = "WAITING";
+  console.log("waiting");
+
+  //wait for 5 secs
+  let start = Date.now();
+  while (Date.now() < start + 5000) {
+    /* do nothing */
+  }
+
+  divStatus.textContent = "DONE";
+  console.log("done");
+};
