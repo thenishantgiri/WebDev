@@ -11,3 +11,10 @@ function helloSayer(times, name) {
     while (true) {} //infinite loop
   }, 100);
 }
+
+helloSayer(3, "Lucifer");
+helloSayer(2, "BoJack");
+
+module.exports = {
+  helloSayer,
+};
