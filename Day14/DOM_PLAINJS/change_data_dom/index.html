@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="para" id="p1">This is a para</p>
+    <p class="para" id="p2">This is <b>another</b> para</p>
+    <p>Third para</p>
+    <div id="div1">
+        Some data in the div
+        <span>A span here</span>
+    </div>
+    <input type="text" name="" id="inpbox">
+    <button id="btn">BUTTON</button>
+</body>
+
+</html>
+
+<!__ ## let p2=document.getElementsByClassName('para')[1] --> fetches 2nd element of the array returned by the
+    operation,
+    and assigns it to variable 'p2' __>
+
+    <!__ ## p2.innerText : to see the text of p2 para __>
+
+        <!__ ## p2.innerHTML : returns the entire HTML of that para __>
+
+            <!__ ## p2.outerHTML : returns the element + it contains (entire html for that para, whole syntax) __>
+
+                <!__ ## p2.innerText="some new data" : to change the data __>
+
+                    <!__ ## p2.innerText="hello <b>bold</b> text" : this will NOT turn it into a bold sentence __>
+
+                        <!__ ## p2.innerHTML="hello <b>bold</b> text" : this WILL turn it into a bold sentence __>
+
+                            <!__ ## p2.getAttribute('class') : return the class name __>
+
+                                <!__ ## p2.getAttribute('id') : gives us the id __>
+
+                                    <!__ ## p2.setAttribute('contenteditable', true) : makes the para editable on
+                                        browser window itself (with spell-check enabled) __>
+
+                                        <!__ ## p2.setAttribute('spellcheck', false) : turns off the spell check in that
+                                            element __>
+
+                                            <!__ ## let i=document.getElementById('inpbox') --> i.innerHTML : it doesn't
+                                                fetch the user input data inside the 'input tag' __>
+
+                                                <!__ ## i.value : This will fetch the value inside the 'input tag' (user
+                                                    input value) __>
+
+                                                    <!__ ## i.setAttribute('type', 'email' ) : sets the attribute of
+                                                        the 'input tag' to 'email' __>
+
+                                                        <!__ ## i.validity : displays a report/state of the input value
+                                                            inside 'input tag' __>
+
+                                                            <!__ ## let btn=document.getElementById('btn') -->
+                                                                btn.setInnerText='a' : changes the text inside the
+                                                                button __>
+
+                                                                <!__ ## btn.innerHTML='<b>BOLD</b>' : changes the text
+                                                                    inside the button to BOLD in bold style __>
