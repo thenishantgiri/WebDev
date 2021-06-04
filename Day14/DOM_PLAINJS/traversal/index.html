@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>aay</li>
+        <li>bee
+            <ol>
+                <li>uno</li>
+                <li>duo</li>
+                <li>tres</li>
+                <li>quad</li>
+            </ol>
+        </li>
+        <li>
+            see
+            <ol>
+                <li>do</li>
+                <li>re</li>
+                <li>mi</li>
+                <li>fa</li>
+            </ol>
+        </li>
+        <li>dee</li>
+        <li>eee</li>
+        <li>eff</li>
+        <li>jee</li>
+    </ul>
+</body>
+
+</html>
+
+<!__ ## let mi=temp0 --> mi.parentElement.parentElement.previousElementSibling.children[0] : takes us from 'me > see' to
+    ' bee' __>
+
+    <!__ ## let mi=temp0 --> mi.parentElement.parentElement.previousElementSibling.children[0].children : takes us from
+        'me > see' to
+        'children > bee' __>
+
+        <!__ ## let mi=temp0 --> mi.parentElement.parentElement.previousElementSibling.children[0].children[2] : takes
+            us from 'me > see' to
+            'tres> bee' __>
+
+            <!__ ## let mi=temp0 --> mi.previousElementSibling : takes us from 'me > see' to
+                're > see' __>
+
+                <!__ ## let mi=temp0 --> mi.nextElementSibling : takes us from 'me > see' to
+                    'fa > see' __>
+
+                    <!__ ## mi.parentElement.remove(mi) : removes the 'ol' inside which the siblings and mi itself used
+                        to reside __>
+
+                        <!__ ## mi.parentElement.remove() : removes the 'ol' inside which the siblings and mi itself
+                            used to reside __>
+
+                            <!__ ## dee.appendChild(mi.parentElement) : this will append the mi's parentElement i.e. the
+                                whole ol, to dee __>
