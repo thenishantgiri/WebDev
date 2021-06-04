@@ -1,4 +1,4 @@
-function helloSayer(times, name, doneSaying) {
+function helloSayer(times, name) {
   return new Promise((resolve, reject) => {
     let count = 0;
     let loopId = setInterval(() => {
