@@ -35,7 +35,7 @@ window.onload = () => {
     downBtn.innerText = "⬇️";
 
     downBtn.onclick = (event) => {
-      // event.target = the up button
+      // event.target = the down button
       // event.target.parentElement = the <li> item
       // event.target.parentElement.parentElement is the todolist
 
