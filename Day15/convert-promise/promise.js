@@ -1,4 +1,8 @@
-let wait = function (timeout) {
+let inpP = document.getElementById("inpP");
+let btnWaitP = document.getElementById("btnWaitP");
+let btnCancelP = document.getElementById("btnCancelP");
+
+let waitP = function (timeout) {
   console.log("waiting...");
 
   return new Promise((resolve, reject) => {
@@ -9,12 +13,14 @@ let wait = function (timeout) {
   });
 };
 
-document.getElementById("btnWait").onclick = function () {
-  wait(document.getElementById("inp").value * 1000)
+btnWaitP.onclick = function () {
+  waitP(inpP.value * 1000)
     .then(() => {
-      console.log("waited", document.getElementById("inp").value, "sec");
+      console.log(`waited ${inpP.value} sec`);
     })
     .catch((err) => {
       console.error(err);
     });
 };
+
+btnCancelP.onclick = () => {};
