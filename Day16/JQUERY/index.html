@@ -26,7 +26,7 @@
 
     // If we select items using jQuery, it returns us an Array
 
-    
+
 ->  $('div').text('something else')
 
 ==> Object { 0: div#one.item, 1: div.item, 2: div#three, 3: div.item, 4: div, 5: div.item
@@ -59,4 +59,32 @@
 ==> true
 
 
+
+// Changing Attributes and Styles
+
+-> let o = $('#one')
+==> undefined
+
+
+-> o.attr('height',200)
+==> Object { 0: div#one.item, length: 1 }
+
+
+-> o.html('Hello <b>World</b>')
+==> Object { 0: div#one.item, length: 1 }
+
+
+-> o.attr('style','color:red')
+==> Object { 0: div#one.item, length: 1 }
+
+
+-> o.css('color','blue')
+==>Object { 0: div#one.item, length: 1 }
+
+-> o.css('font-size','20pt')
+==> Object { 0: div#one.item, length: 1 }
+
+
+-> o.css('font-size','25pt').attr('width',200)
+==> Object { 0: div#one.item, length: 1 }
  -->
