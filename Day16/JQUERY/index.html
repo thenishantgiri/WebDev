@@ -11,6 +11,52 @@
 
 <body>
     <h1>jQuery</h1>
+
+    <div id="one" class="item">Something</div>
+    <div class="item">Something</div>
+    <div id="three">Something</div>
+    <div class="item">Something</div>
+    <div>Something</div>
+    <div class="item">Something</div>
 </body>
 
 </html>
+
+<!-- 
+
+    // If we select items using jQuery, it returns us an Array
+
+    
+->  $('div').text('something else')
+
+==> Object { 0: div#one.item, 1: div.item, 2: div#three, 3: div.item, 4: div, 5: div.item
+, length: 6, prevObject: {…} }
+
+
+-> $('div.item').text('another')
+
+==> Object { 0: div#one.item, 1: div.item, 2: div.item, 3: div.item
+, length: 4, prevObject: {…} }
+
+-> $('#one').text('first item')
+
+==> Object { 0: div#one.item
+, length: 1 }
+
+-> document.getElementById('one')
+
+==> <div id="one" class="item">
+
+-> $('#one')
+
+==> Object { 0: div#one.item
+, length: 1 }
+
+-> $('#one') == document.getElementById('one')
+==> false
+
+-> $('#one')[0] == document.getElementById('one')
+==> true
+
+
+ -->
