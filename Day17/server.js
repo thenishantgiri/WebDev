@@ -19,6 +19,19 @@ app.get('/greet', (req, res) => {
     res.send(`<h1 style="color: lightblue">Good Morning ${person}</h1>`)
 })
 
+//if we make a 'post' request : the request goes to the body of the request, instead of query of url (like get request)
+app.post('/greet', (req, res) => {
+    let person = 'Guest'
+    console.log(req.body)
+    if (req.query.person)
+        person = req.query.person
+    res.send(`<h1 style="color: lightblue">Good Morning ${person}</h1>`)
+})
+
+//to send a file
+app.get('/form', (req, res) => {
+    res.sendFile(__dirname + '/files/form.html')
+})
 
 //listen function starts our server on a certain port (network port)
 //usually we use ports greater than 1024, 0-1024 ports are reserved for specific task
