@@ -1,3 +1,6 @@
 [submodule "Projects/Project-TodoList-Bootstrap-jQuery"]
 	path = Projects/Project-TodoList-Bootstrap-jQuery
 	url = https://github.com/thenishantgiri/Project-TodoList-Bootstrap-jQuery
+[submodule "Projects/Game-Slot-Machine"]
+	path = Projects/Game-Slot-Machine
+	url = https://github.com/thenishantgiri/Game-Slot-Machine
