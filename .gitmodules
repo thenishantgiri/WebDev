@@ -4,3 +4,6 @@
 [submodule "Projects/Game-Slot-Machine"]
 	path = Projects/Game-Slot-Machine
 	url = https://github.com/thenishantgiri/Game-Slot-Machine
+[submodule "Projects/Project-TodoList-ExpressJS"]
+	path = Projects/Project-TodoList-ExpressJS
+	url = https://github.com/thenishantgiri/Project-TodoList-ExpressJS
