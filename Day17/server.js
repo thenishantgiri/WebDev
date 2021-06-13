@@ -4,6 +4,9 @@ const express = require('express')
 //usually we write "const server = express()" or "const app = express()"
 const app = express()
 
+//this is going to parse the body of the request if it is of url encoded format
+app.use(express.urlencoded({extended: true}))
+
 //if we send a get request on path: '/greet', then the callback function is supposed to run
 //the callback function has two arguments, request and response
 //response object is something that we can send back to the user
@@ -23,9 +26,9 @@ app.get('/greet', (req, res) => {
 app.post('/greet', (req, res) => {
     let person = 'Guest'
     console.log(req.body)
-    if (req.query.person)
-        person = req.query.person
-    res.send(`<h1 style="color: lightblue">Good Morning ${person}</h1>`)
+    if (req.body.person)
+        person = req.body.person
+    res.send(`<h1 style="color: lightblue">Good Evening ${person}</h1>`)
 })
 
 //to send a file
