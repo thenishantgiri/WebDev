@@ -22,6 +22,22 @@ app.get('/greet', (req, res) => {
     res.send(`<h1 style="color: lightblue">Good Morning ${person}</h1>`)
 })
 
+
+
+//Path parameter - ':' makes the 'city' part variable in nature
+// path param 1
+app.get('/:city/:greeting', (req, res) => {
+    res.send(`<h2 style="color: darkcyan">${req.params.greeting} to ${req.params.city}!</h2>`)
+})
+
+//path param 2
+app.get('/:person/:action', (req, res) => {
+    res.send(`<h2 style="color: darkcyan">Thank You ${req.params.person} for ${req.params.action}!</h2>`)
+})
+// only the path param 1 will execute, if we run path param 1 and path param 2 at the same time
+// localhost:4444/{x}/{y} : we'll never reach at 'path param 2'
+
+
 //if we make a 'post' request : the request goes to the body of the request, instead of query of url (like get request)
 app.post('/greet', (req, res) => {
     let person = 'Guest'
@@ -30,6 +46,8 @@ app.post('/greet', (req, res) => {
         person = req.body.person
     res.send(`<h1 style="color: lightblue">Good Evening ${person}</h1>`)
 })
+
+
 
 //to send a file
 app.get('/form', (req, res) => {
