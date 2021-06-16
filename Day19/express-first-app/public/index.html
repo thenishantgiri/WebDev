@@ -14,6 +14,20 @@
     <h1>Public Pages</h1>
     <a href="./a.html">a</a>
     <a href="./b.html">b</a>
+
+    <h3 style="color: lightblue;">Say Hello</h3>
+    <form action="/hello" method="GET">
+        <input type="text" name="user">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3 style="color: lightskyblue;">Google Search</h3>
+    <form method="GET">
+        <input type="text" name="q" placeholder="search query">
+        <button formaction="https://google.com/search" type="submit">Google Search</button>
+        <button formaction="https://bing.com/search">Bing Search</button>
+        <button formaction="https://duckduckgo.com/">Private Search</button>
+    </form>
 </body>
 
 </html>
