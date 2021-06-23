@@ -1,8 +1,8 @@
-const Sequelize = require("sequelize");
+const { Sequelize } = require("sequelize");
 
 const db = new Sequelize("mytestdb", "thenishantgiri", "admin", {
   host: "localhost",
-  dialect: "mysql",
+  dialect: "mysql"
 });
 
 db.authenticate()
