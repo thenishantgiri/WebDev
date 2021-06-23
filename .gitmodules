@@ -7,9 +7,9 @@
 [submodule "Projects/Project-TodoList-ExpressJS"]
 	path = Projects/Project-TodoList-ExpressJS
 	url = https://github.com/thenishantgiri/Project-TodoList-ExpressJS
+[submodule "Day22/Sequelize/Project-BatchCodeGenerator"]
+	path = Day22/Sequelize/Project-BatchCodeGenerator
+	url = https://github.com/thenishantgiri/Project-BatchCodeGenerator
 [submodule "Projects/Project-BatchCodeGenerator"]
 	path = Projects/Project-BatchCodeGenerator
 	url = https://github.com/thenishantgiri/Project-BatchCodeGenerator
-[submodule "Projects/Project-BatchCodeGenerator"]
-	path = Day22/Sequelize/BatchCodeGen
-	url = https://github.com/thenishantgiri/Project-BatchCodeGenerator	
