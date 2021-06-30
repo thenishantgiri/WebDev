@@ -13,3 +13,9 @@
 [submodule "Projects/Project-BatchCodeGenerator"]
 	path = Projects/Project-BatchCodeGenerator
 	url = https://github.com/thenishantgiri/Project-BatchCodeGenerator
+[submodule "Day23/Project-ShoppingCart"]
+	path = Day23/Project-ShoppingCart
+	url = https://github.com/thenishantgiri/Project-ShoppingCart
+[submodule "Projects/Project-ShoppingCart"]
+	path = Projects/Project-ShoppingCart
+	url = https://github.com/thenishantgiri/Project-ShoppingCart
