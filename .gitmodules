@@ -19,3 +19,6 @@
 [submodule "Projects/Project-ShoppingCart"]
 	path = Projects/Project-ShoppingCart
 	url = https://github.com/thenishantgiri/Project-ShoppingCart
+[submodule "Projects/Project-Social_Media_App-sample"]
+	path = Projects/Project-Social_Media_App-sample
+	url = https://github.com/thenishantgiri/Project-Social_Media_App-sample.git
