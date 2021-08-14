@@ -22,3 +22,6 @@
 [submodule "Projects/Project-Social_Media_App-sample"]
 	path = Projects/Project-Social_Media_App-sample
 	url = https://github.com/thenishantgiri/Project-Social_Media_App-sample.git
+[submodule "Day24/Project-Social_Media_App-sample"]
+	path = Day24/Project-Social_Media_App-sample
+	url = https://github.com/thenishantgiri/Project-Social_Media_App-sample.git
