@@ -25,3 +25,9 @@
 [submodule "Day24/Project-Social_Media_App-sample"]
 	path = Day24/Project-Social_Media_App-sample
 	url = https://github.com/thenishantgiri/Project-Social_Media_App-sample.git
+[submodule "Day25/Project-Realtime_Chat_App-with_WebSockets"]
+	path = Day25/Project-Realtime_Chat_App-with_WebSockets
+	url = https://github.com/thenishantgiri/Project-Realtime_Chat_App-with_WebSockets
+[submodule "Projects/Project-Realtime_Chat_App-with_WebSockets"]
+	path = Projects/Project-Realtime_Chat_App-with_WebSockets
+	url = https://github.com/thenishantgiri/Project-Realtime_Chat_App-with_WebSockets
