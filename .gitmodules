@@ -31,3 +31,9 @@
 [submodule "Projects/Project-Realtime_Chat_App-with_WebSockets"]
 	path = Projects/Project-Realtime_Chat_App-with_WebSockets
 	url = https://github.com/thenishantgiri/Project-Realtime_Chat_App-with_WebSockets
+[submodule "Day26/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO"]
+	path = Day26/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO
+	url = https://github.com/thenishantgiri/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO
+[submodule "Projects/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO"]
+	path = Projects/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO
+	url = https://github.com/thenishantgiri/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO
