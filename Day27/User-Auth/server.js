@@ -45,7 +45,16 @@ app.post("/login", async (req, res) => {
     return res.status(401).render("login", { error: "Incorrect password" });
   }
 
+  req.session.userId = user.id;
   res.redirect("/profile");
+});
+
+app.get("/profile", async (req, res) => {
+  if (!req.session.userId) {
+    return res.redirect("/login");
+  }
+  const user = await Users.findByPk(req.session.userId);
+  res.render("profile", { user });
 });
 
 db.sync({ alter: true })

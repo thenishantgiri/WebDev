@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome {{user.username}}</title>
+  </head>
+  <body>
+    <h1>Profile</h1>
+
+    <table cellpadding="10" cellspacing="10" border="1">
+      <tr>
+        <th>User ID</th>
+        <td>{{user.id}}</td>
+      </tr>
+      <tr>
+        <th>UserName</th>
+        <td>{{user.username}}</td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td>{{user.email}}</td>
+      </tr>
+    </table>
+  </body>
+</html>
