@@ -25,10 +25,27 @@ app.post("/signup", async (req, res) => {
   const user = await Users.create({
     username: req.body.username,
     email: req.body.email,
-    password: req.body.password,
+    password: req.body.password, // NOTE: In production we save hash of password
   });
 
   res.status(201).send(`User ${user.id} created`);
+});
+
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
+app.post("/login", async (req, res) => {
+  const user = await Users.findOne({ where: { username: req.body.username } });
+  if (!user) {
+    return res.status(404).render("login", { error: "Invalid username" });
+  }
+
+  if (user.password !== req.body.password) {
+    return res.status(401).render("login", { error: "Incorrect password" });
+  }
+
+  res.redirect("/profile");
 });
 
 db.sync({ alter: true })
