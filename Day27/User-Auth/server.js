@@ -57,6 +57,12 @@ app.get("/profile", async (req, res) => {
   res.render("profile", { user });
 });
 
+app.get("/logout", (req, res) => {
+  req.session.userId = null;
+  //   req.session.destroy(); // to destroy session and cookie
+  res.redirect("/login");
+});
+
 db.sync({ alter: true })
   .then(() => {
     app.listen(2222, () =>
