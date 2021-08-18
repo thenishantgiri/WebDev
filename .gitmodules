@@ -37,3 +37,6 @@
 [submodule "Projects/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO"]
 	path = Projects/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO
 	url = https://github.com/thenishantgiri/Project-Realtime_WebApp-Color_It_Now-with_Socket.IO
+[submodule "Day28/SampleDeployFrontend"]
+	path = Day28/SampleDeployFrontend
+	url = https://github.com/thenishantgiri/SampleDeployFrontend.git
