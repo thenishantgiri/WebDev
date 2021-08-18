@@ -40,3 +40,6 @@
 [submodule "Day28/SampleDeployFrontend"]
 	path = Day28/SampleDeployFrontend
 	url = https://github.com/thenishantgiri/SampleDeployFrontend.git
+[submodule "Day28/SampleDeployBackendNodejs"]
+	path = Day28/SampleDeployBackendNodejs
+	url = https://github.com/thenishantgiri/SampleDeployBackendNodejs.git
