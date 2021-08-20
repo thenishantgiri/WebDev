@@ -14,6 +14,9 @@ app.use(
     resave: true,
     saveUninitialized: true,
     secret: "24knb6k247b2k7b2k7bk247hb2kh7b2",
+    cookie: {
+      expires: new Date("2021-08-31"),
+    },
   })
 );
 
