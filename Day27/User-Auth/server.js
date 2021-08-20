@@ -15,7 +15,8 @@ app.use(
     saveUninitialized: true,
     secret: "24knb6k247b2k7b2k7bk247hb2kh7b2",
     cookie: {
-      expires: new Date("2021-08-31"),
+      // expires: new Date("2021-08-31"),
+      maxAge: 1000 * 60 * 60 * 24, //session expires after one day
     },
   })
 );
@@ -73,3 +74,9 @@ db.sync({ alter: true })
     );
   })
   .catch(console.error);
+
+/**
+ *
+ * we can use 'compatible session stores' for storing cookie session onto different server,
+ * "connect-redis" and "connect-mongo" are popular session stores.
+ */
