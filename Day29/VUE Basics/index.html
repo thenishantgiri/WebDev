@@ -11,14 +11,15 @@
 
     <body>
         <div id="app">
-            <p>{{para}}</p>
+            <input v-model="username" placeholder="username">
+            <p>Hello {{username}}</p>
         </div>
 
         <script>
             let app = new Vue({
                 el: "#app",
                 data: {
-                    para: (new Date().getTime())
+                    username: ''
                 }
             })
         </script>
